@@ -1,0 +1,33 @@
+.navbar {
+  width: 100%;
+  height: rem-calc($navbar-height);
+  @include position(sticky, 0);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    font-size: rem-calc($font-family-base);
+    font-weight: $font-weight-normal;
+    text-transform: uppercase;
+    color: $grey-200;
+
+    + .nav-item {
+      margin-left: 15px;
+    }
+
+    &:hover {
+      color: $white;
+      $font-weight-normal: $font-weight-bold;
+    }
+  }
+
+  .logo {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+  }
+}

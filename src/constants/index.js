@@ -1,0 +1,16 @@
+export default {
+  LOGO:  '../../src/assets/images/logo.svg',
+  STAR:  '../../src/assets/images/icons/star.svg',
+  GLOBAL: '../../src/assets/images/icons/global.svg',
+  PEOPLE: '../../src/assets/images/icons/people.svg',
+  BADGE:  '../../src/assets/images/icons/badge.svg',
+  CASE:  '../../src/assets/images/icons/case.svg',
+  MISSION_BG1: '../../../src/assets/images/mission/bg1.png',
+  MISSION_BG2: '../../src/assets/images/mission/bg2.png',
+  MISSION_BG3: '../../src/assets/images/mission/bg3.png',
+  MISSION_BG4: '../../src/assets/images/mission/bg4.png',
+  MISSION_ICON1: '../../src/assets/images/mission/icon1.svg',
+  MISSION_ICON2: '../../src/assets/images/mission/icon2.svg',
+  MISSION_ICON3: '../../src/assets/images/mission/icon3.svg',
+  MISSION_ICON4: '../../src/assets/images/mission/icon4.svg',
+};

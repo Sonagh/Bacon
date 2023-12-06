@@ -1,0 +1,27 @@
+.mission {
+  padding-block: rem-calc(120);
+
+  &-item {
+    height: 610px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: $radius;
+
+    .item-inner {
+      position: relative;
+      padding: 35px;
+      color: $white;
+      background-color: $grey-900;
+      border-bottom-left-radius: $radius;
+      border-bottom-right-radius: $radius;
+    }
+
+    .item-icon {
+      width: 38px;
+      @include position(absolute, -18px);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+$default: #757575;
+$default60: rgba($default, 0.6);
+
+$primary: #035e97;
+$primary60: rgba($primary, 0.8);
+
+$secondary: #fcc309;
+$secondary60: #dba338;
+
+$link: #007dd5;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "default": (
+      "color": $default,
+      "btnBackground": $default60,
+      "fontColor": #000,
+    ),
+    "primary": (
+      "color": $primary,
+      "btnBackground": $primary60,
+      "fontColor": #fff,
+    ),
+    "secondary": (
+      "color": $secondary,
+      "btnBackground": $secondary60,
+      "fontColor": #000,
+    ),
+  ),
+  $theme-colors
+);

@@ -1,0 +1,188 @@
+// flexbox
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-link {
+  color: $link-color;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+// spacing
+.mt-auto {
+  margin-top: auto;
+}
+
+.mt-150 {
+  margin-top: rem-calc(50);
+
+  /* 992px and bigger */
+  @include media-breakpoint-up(md) {
+    margin-top: rem-calc(150);
+  }
+}
+
+.mt-40 {
+  margin-top: rem-calc(40);
+}
+
+.my-40 {
+  margin-block: rem-calc(40);
+}
+
+.my-20 {
+  margin-block: rem-calc(20);
+}
+
+.mt-20 {
+  margin-top: rem-calc(20);
+}
+
+.mt-10 {
+  margin-top: rem-calc(10);
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-20 {
+  margin-bottom: rem-calc(20);
+}
+
+.mb-5 {
+  margin-bottom: rem-calc(5) !important;
+}
+
+.ml-10 {
+  margin-left: rem-calc(10) !important;
+}
+
+.mr-10 {
+  margin-right: rem-calc(10);
+}
+
+.pb-100 {
+  padding-bottom: rem-calc(100);
+}
+
+.pt-30 {
+  padding-top: rem-calc(30);
+}
+
+.pr-10 {
+  padding-right: rem-calc(10);
+}
+
+.pl-10 {
+  padding-left: rem-calc(10);
+}
+
+.px-0 {
+  padding-inline: 0;
+}
+
+.pr-10 {
+  padding-right: rem-calc(10);
+}
+
+.py-40 {
+  padding-block: rem-calc(40);
+}
+
+.gap-20 {
+  gap: rem-calc(20)
+}
+
+// font
+.font-weight-semi-bold {
+  font-weight: $font-weight-semi-bold;
+}
+
+.font-weight-medium {
+  font-weight: $font-weight-medium
+}
+
+.font-weight-base {
+  font-weight: $font-weight-base !important;
+}
+
+//
+.bg-muted {
+  background-color: $grey-100;
+}
+
+//
+.overflow-hidden {
+  overflow: hidden;
+}
+
+//
+.header-zIndex {
+  z-index: $header-zIndex;
+}
+.header-zIndex-1 {
+  z-index: $header-zIndex - 1;
+}
+
+/* 992px and bigger */
+@include media-breakpoint-up(md) {
+  .ml-10-d {
+    margin-left: rem-calc(10);
+  }
+
+  .mt-20-d {
+    margin-top: rem-calc(20);
+  }
+}
+
+/* 992px and smaller */
+@include media-breakpoint-down(md) {
+  .mx--15-m {
+    margin-inline: -15px;
+
+    > div {
+      padding-inline: 15px;
+      margin-top: 10px;
+    }
+  }
+
+  .gap-15-m {
+    gap: 15px;
+  }
+}

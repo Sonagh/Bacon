@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba($primary, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primary;
+  border-radius: 3px;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+html,
+body {
+  font-size: $font-size-base + px; // 20
+
+  /* 992px to 1440px */
+  @include media-breakpoint-between(lg, xl) {
+    font-size: 14px;
+  }
+
+  ///* 1240px and smaller */
+  //@include media-breakpoint-down(lg) {
+  //  font-size: 14px;
+  //}
+  //
+  ///* 576px and smaller */
+  //@include media-breakpoint-down(xs) {
+  //  font-size: 12px;
+  //}
+}
+
+body {
+  font-family: $font-family-base;
+  color: $body-color;
+  background-color: $body-bg;
+
+  //overflow-x: hidden;
+
+  //&.loaded {
+  //  overflow-y: auto;
+  //}
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* 1920px and bigger */
+  @include media-breakpoint-up(xl) {
+    width: container-sizes(xl);
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* 1920px and bigger */
+  @include media-breakpoint-up(xl) {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+}
+
+hr {
+  border-top: 1px solid $grey-200;
+}
+
+.error {
+  color: $red;
+}
+
+a.btn:hover {
+  text-decoration: none;
+}
+
+.title {
+  margin-bottom: rem-calc(20);
+  text-transform: uppercase;
+  font-family: $font-family-base;
+  font-size: rem-calc($font-size-h1);
+  letter-spacing: 2.88px;
+
+  &-text {
+    margin-bottom: rem-calc(32);
+  }
+}
+
