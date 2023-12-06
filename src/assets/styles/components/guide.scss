@@ -1,0 +1,29 @@
+.guide {
+  margin-top: rem-calc(180);
+  text-align: center;
+
+  &-item-wrapper {
+    display: flex;
+    margin-top: rem-calc(80);
+  }
+
+   &-item {
+     width: rem-calc(330);
+     height: rem-calc(330);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: rem-calc(32);
+     border: 4px dashed $grey-100;
+     border-radius: $radius-circle;
+
+     .item-text {
+       margin-top: 24px;
+       font-size: 16px;
+       font-weight: $font-weight-bold;
+       text-align: center;
+       color: $black;
+     }
+  }
+}

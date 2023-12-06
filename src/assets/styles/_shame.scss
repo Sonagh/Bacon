@@ -3,6 +3,29 @@ button {
   cursor: pointer;
 }
 
-.w-64 {
-  width: 64%;
+.w-68 {
+  width: 68%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 205px;
+  height: 48px;
+  transition: background-color .25s linear;
+  border-radius: $radius-xs;
+
+  &-primary {
+    color: $white;
+    background-color: $primary;
+
+    &:hover {
+      background-color: $primary-dark;
+    }
+  }
 }

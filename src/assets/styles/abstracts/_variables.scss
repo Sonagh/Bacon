@@ -2,9 +2,9 @@
 $white: #fff;
 $black: #000;
 
-$grey-100: #f5f5f5;
+$grey-100: #e2e2e2;
 $grey-200: #c3c3c3;
-$grey-300: #acacac;
+$grey-300: #727272;
 $grey-400: #636262;
 $grey-500: #4c4A46;
 $grey-600: #919191;
@@ -17,16 +17,17 @@ $red: #ff0000;
 $muted: rgba($black, 0.4);
 $link-color: #007dd5;
 
-$primary: #9cc255;
-$primary-hover: #193b5a;
-$primary-dark: #0b3b5d;
-$primary-light: #e8f2fb;
+$primary: #4e8035;
+$primary-light: #9cc255;
+$primary-dark: #2a5515;
+
+$primary-light-light: #e8f2fb;
 $secondary: #fcc309;
 $secondary-hover: #dba338;
 $danger: $red;
 
 // fonts
-$font-family-base: "MontserratArm", sans-serif;
+$font-family-base: "Roboto", sans-serif;
 
 //font-family: HayRoboto;
 
@@ -65,26 +66,25 @@ $breakpoints: (
 
 $containerSizes: (
   lg: 1152px,
-  xl: 1712px,
+  xl: 1680px,
 );
 
 $sp-container-x: 45;
 
 // font sizes
 $font-size-base: 20;
+$font-size-h1: 72;
 
 // border radius
 $radius: 26px;
-$radius-xs: 3;
-$radius-sm: 6;
-$radius-rounded: 25;
+$radius-md: 18px;
+$radius-xs: 9px;
 $radius-circle: 50%;
 
 $radius-base: $radius;
 
 // z index
-$header-zIndex: 999;
-$dropdown-zIndex: 2;
+$navbar-zIndex: 999;
 
 // header
 $header-height: 148;
@@ -93,27 +93,4 @@ $header-top-m-x: 4;
 $header-input-height: 40;
 
 // navbar
-$navbar-height: 200;
-$nav-item-mx: 24;
-$nav-item-width: 180;
-
-// footer
-$footer-height: 230;
-
-// radio button
-$radio-button-size: 15;
-
-// dropdown
-$dropdown-nav-size: 300;
-
-// input
-$input-height: 40px;
-
-// button
-$btn-height: 30;
-$btn-xs-height: 25;
-$btn-sm-height: 35;
-
-$nav-item-height-m: 50px;
-
-$font-size-h1: 72;
+$navbar-height: 160;

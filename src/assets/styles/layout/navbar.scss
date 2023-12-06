@@ -1,7 +1,8 @@
 .navbar {
   width: 100%;
   height: rem-calc($navbar-height);
-  @include position(sticky, 0);
+  @include position(fixed, 0, $zIndex: $navbar-zIndex);
+  padding-block: 28px;
 
   .container {
     display: flex;
@@ -10,7 +11,7 @@
   }
 
   .nav-item {
-    font-size: rem-calc($font-family-base);
+    font-size: rem-calc($font-size-base);
     font-weight: $font-weight-normal;
     text-transform: uppercase;
     color: $grey-200;

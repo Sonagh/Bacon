@@ -1,0 +1,17 @@
+.gallery {
+  padding-block: rem-calc(120);
+
+  &-img {
+    margin: 37px;
+    border-radius: $radius;
+    box-shadow: 0 37px 37px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .swiper {
+    margin-inline: -37px;
+  }
+
+  .swiper-slide {
+    margin-bottom: rem-calc(100);
+  }
+}

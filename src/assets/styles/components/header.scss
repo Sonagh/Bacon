@@ -1,8 +1,7 @@
 .header {
   width: 100%;
-  height: 645px;
+  height: 100vh;
   padding-bottom: rem-calc(150);
-  margin-top: -200px;
   color: $white;
   background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 50%, #000 100%),
               url("../src/assets/images/header-bg.png") center / cover no-repeat;
@@ -20,7 +19,24 @@
   }
 
   &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-inline: 15px;
     color: $white;
+
+    + .header-item::before {
+      content: "";
+      width: 1px;
+      height: 100%;
+      @include position(absolute, $left: -15px);
+      background-color: $white;
+    }
+
+    &:first-child {
+      margin-left: unset;
+    }
 
     .item-number {
       font-size: rem-calc(128);
@@ -31,15 +47,12 @@
       display: flex;
       text-transform: uppercase;
       font-size: 18px;
-      color: $primary;
+      font-weight: $font-weight-bold;
+      color: $primary-light;
 
       .item-img {
         margin-right: rem-calc(8);
       }
-    }
-
-    + .header-item {
-      margin-left: rem-calc(60);
     }
   }
 }

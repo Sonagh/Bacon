@@ -1,6 +1,10 @@
 .mission {
   padding-block: rem-calc(120);
 
+  &-inner {
+    margin-left: 78px;
+  }
+
   &-item {
     height: 610px;
     display: flex;
@@ -24,4 +28,9 @@
       @include position(absolute, -18px);
     }
   }
+
+  .swiper-slide {
+    padding-bottom: 100px;
+  }
+
 }

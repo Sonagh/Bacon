@@ -1,7 +1,7 @@
 import Icons from "../../constants";
 
-export const Navbar = () => (
-  <navbar className="navbar">
+const Navbar = () => (
+  <div className="navbar">
     <div className="container">
       <img className="logo" src={Icons.LOGO} alt="logo" />
 
@@ -14,5 +14,7 @@ export const Navbar = () => (
         <a className="nav-item" href="#">բլոգ</a>
       </div>
     </div>
-  </navbar>
+  </div>
 )
+
+export default Navbar;

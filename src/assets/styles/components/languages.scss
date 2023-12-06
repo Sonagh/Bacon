@@ -1,0 +1,23 @@
+.languages {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  text-transform: uppercase;
+  color: $grey-200;
+  transition: font-weight .25s linear, color .25s linear;
+
+  .btn-language {
+    + .btn-language {
+      margin-left: 24px;
+    }
+
+    &.active,
+    &:hover {
+      color: $white;
+    }
+
+    &.active {
+      font-weight: $font-weight-bold;
+    }
+  }
+}

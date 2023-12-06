@@ -1,25 +1,24 @@
 import {Title} from "../../Title.jsx";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {MissionItem} from "./MissionItem.jsx";
+import Icons from "../../../constants";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import {MissionItem} from "./MissionItem.jsx";
-import Icons from "../../../constants";
 import { Navigation } from 'swiper/modules';
 
-
-export const Mission = () => (
+const Mission = () => (
   <section className="mission">
-    <div className="container">
-      <div className="w-64">
+    <div className="mission-inner">
+      <div className="w-68">
         <Title title='Բեկոնի առաքելությունը'
                text='Գործունեությունը սկսելով փոքր արտադրամասում` ընկերությունը ժամանակի ընթացքում ընդարձակվել է եւ այսօր գործում է ժամանակակից, միջազգային ստանդարտներին համապատասխան մասնաշենքում, որը կառուցվել է 2006թ. Ավստրիացի հայտնի մասնագետների կողմից կազմված նախագծով:'
         />
       </div>
 
       <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
+        spaceBetween={65}
+        slidesPerView={3.8}
         navigation={true}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
@@ -72,4 +71,6 @@ export const Mission = () => (
     </div>
 
   </section>
-)
+);
+
+export default Mission;

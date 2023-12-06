@@ -1,12 +1,12 @@
 /* calculate rem */
 @function rem-calc($size) {
-  $remSize: $size / $font-size-base;
+  $remSize: calc($size / $font-size-base);
   @return #{$remSize}rem;
 }
 
 /* calculate em */
 @function em-calc($size) {
-  $emSize: $size / $font-size-base;
+  $emSize: calc($size / $font-size-base);
   @return #{$emSize}em;
 }
 
