@@ -30,4 +30,5 @@ export default {
   GALLERY_IMG3: '../../src/assets/images/gallery/img3.png',
   GALLERY_IMG4: '../../src/assets/images/gallery/img4.png',
   GALLERY_IMG5: '../../src/assets/images/gallery/img5.png',
+  FAQ_IMG: '../../src/assets/images/faq-img.png',
 };

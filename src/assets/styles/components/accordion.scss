@@ -1,0 +1,38 @@
+.accordion {
+  position: relative;
+  padding: 20px;
+  color: $white;
+  background-color: $accordion-btn;
+  border-radius: $radius;
+
+  &-title {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+  }
+
+  &-text {
+    margin-top: 20px;
+  }
+
+  &-btn {
+    width: $accordion-btn-w;
+    height: $accordion-btn-w;
+    @include position(absolute, calc($accordion-btn-w / -2), calc($accordion-btn-w / -2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    background-color: $primary-light;
+    transition: background-color .25s linear;
+    border-radius: $radius-circle;
+
+    &.active,
+    &:hover {
+      background-color: $primary;
+    }
+  }
+
+  &-collapse {
+    font-size: 16px;
+  }
+}

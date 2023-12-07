@@ -1,0 +1,31 @@
+.faq {
+  min-height: rem-calc(1100);
+  margin-top: rem-calc(100);
+  background-color: $grey-800;
+
+  &-inner {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+
+  &-content {
+    padding-right: rem-calc(100);
+  }
+
+  .container-fluid {
+    display: flex;
+    padding-right: 0;
+  }
+
+  .title {
+    margin-top: rem-calc(150);
+    color: $grey-600;
+  }
+
+  .accordion-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: rem-calc(75) rem-calc(105);
+    margin-top: rem-calc(100);
+  }
+}
