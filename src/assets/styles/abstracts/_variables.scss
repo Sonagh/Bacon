@@ -5,7 +5,7 @@ $black: #000;
 $grey-100: #e2e2e2;
 $grey-200: #c3c3c3;
 $grey-300: #727272;
-$grey-400: #636262;
+$grey-400: #8e8e8e;
 $grey-500: #4c4A46;
 $grey-600: #979491;
 $grey-700: #353431;
@@ -16,7 +16,7 @@ $body-color: $grey-500;
 $body-bg: $white;
 
 $red: #ff0000;
-$muted: rgba($black, 0.4);
+$muted: #b5b5b5;
 $link-color: #007dd5;
 
 $primary: #4e8035;
@@ -100,3 +100,5 @@ $navbar-height: 160;
 // accordion
 $accordion-btn: $grey-700;
 $accordion-btn-w: 60px;
+
+$faq-height: 1080;

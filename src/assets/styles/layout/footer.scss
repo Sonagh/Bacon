@@ -1,0 +1,35 @@
+.footer {
+  padding-top: rem-calc(120);
+  background-color: $grey-800;
+
+  &-content {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+
+  &-title {
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &-list {
+    margin-bottom: rem-calc(100);
+
+    .list-item {
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
+
+  .rights-text {
+    padding-block: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

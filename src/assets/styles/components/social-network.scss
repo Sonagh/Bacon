@@ -1,0 +1,22 @@
+.social-network {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .network-item {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: $grey-400;
+    transition: color .25s linear;
+
+    &:hover {
+      color: $white;
+    }
+
+    + .network-item {
+      margin-top: 45px;
+    }
+  }
+}
